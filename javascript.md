@@ -47,7 +47,7 @@ JavaScript 공부 요약본 - 김하늘
 ----
 
 * '=' ; 대입연산자
-* + - * / ; 산술연산자 
+* '+' '-' '*' '/' ; 산술연산자 
 * ! && || ; 논리연산자
 
 		const a = !true;
@@ -89,16 +89,16 @@ not -> and -> or 순서
 ----
 1. function 키워드 사용 
 	
-		function add(a, b){
-       		return a+b;
-    		}
-    		const sum = add(1,2);
-    		console.log(sum);
+	function add(a, b){
+       	return a+b;
+    	}
+    	const sum = add(1,2);
+    	console.log(sum);
     
-    		function hello(name){
-    		console.log('Hello, '+name+'!');
-    		}
-    		hello('korea');
+    	function hello(name){
+    	console.log('Hello, '+name+'!');
+    	}
+    	hello('korea');
 
 2. 템플릿 리터럴 통한 문자열 합하기
 	
@@ -108,13 +108,13 @@ not -> and -> or 순서
     	hello('KOREA');
 
 3. 화살표 함수
-		const add = (a, b) => {
-    		return a+b;
-    		}
-    		console.log(add(1,2));
+	const add = (a, b) => {
+    	return a+b;
+    	}
+    	console.log(add(1,2));
     
-    		const add = (a, b) => a+b;
-    		console.log(add(1,2));
+   	const add = (a, b) => a+b;
+    	console.log(add(1,2));
     
     
 1-06 객체
@@ -176,15 +176,15 @@ continue - 다음 루프 돌게함
 객체 생성자는 함수를 통해서 새로운 객체를 만들고 그 안에 넣고 싶은 값 혹은 함수들을 구현 할 수 있게 해줍니다.
 객체 생성자를 사용 할 때는 보통 함수의 이름을 대문자로 시작하고, 새로운 객체를 만들 때에는 new 키워드를 앞에 붙여주어야 합니다.
 
-*프로토타입
+* 프로토타입
 프로토타입은 다음과 같이 객체 생성자 함수 아래에 .prototype.[원하는키] = 코드를 입력하여 설정 할 수 있습니다.
 
-*객체 생성자 상속받기
+* 객체 생성자 상속받기
 새로 만든 Dog 와 Cat 함수에서 Animal.call 을 호출해주고 있는데요, 여기서 첫번째 인자에는 this 를 넣어주어야 하고, 그 이후에는 Animal 객체 생성자 함수에서 필요로 하는 파라미터를 넣어주어야 합니다.
 
 추가적으로 prototype 을 공유해야 하기 때문에 상속받은 객체 생성자 함수를 만들고 나서 prototype 값을 Animal.prototype 으로 설정해주었습니다.
 
-*클래스
+* 클래스
 
 여기서 우리가 say 라는 함수를 클래스 내부에 선언하였는데요, 클래스 내부의 함수를 '메서드'라고 부릅니다. 이렇게 메서드를 만들면 자동으로 prototype 으로 등록이 됩니다.
 
